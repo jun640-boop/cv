@@ -6,26 +6,60 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>디테일한 정보</h2>
+    <h2>정보</h2>
     <ul>
-        <li>전화번호 : 010-xxxx-xxxx</li> 
-        <li>이메일 : juna3437@naver.com</li> 
-        <li>주소 : 충청북도 청주</li> 
+        <li>
+            <span class="label">전화번호:</span>
+            <span class="value">010-xxxx-xxxx</span>
+        </li>
+        <li>
+            <span class="label">이메일:</span>
+            <span class="value">juna3437@naver.com</span>
+        </li>
+        <li>
+            <span class="label">MBTI:</span>
+            <span class="value">INFP</span>
+        </li>
+        <li>
+            <span class="label">주소:</span>
+            <span class="value">충청북도 청주</span>
+        </li>
     </ul>
 
+
+    <h4>Enter your Name and Email</h4>
     <form action="mailto:juna3437@naver.com" method="post" enctype="text/plain">
         <label>이름: </label>
         <input type="text" name="name" value=""><br>
         <label>이메일 : </label>
         <input type="email" name="이메일" value=""><br>
 
-        <label>메시지 : </label><br>
+        <label>보내고 싶은 메시지 : </label><br>
         <textarea name="name" rows="10" cols="30">
         </textarea><br>
-        <input type="submit" name="메시지" >
+        <input type="submit" name="메시지" value="보내기">
 
     </form>
 
 
 </body>
 </html>
+
+<style>
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+    }
+    .label {
+        width: 100px; /* Adjust width as needed */
+        font-weight: bold;
+    }
+    .value {
+        flex-grow: 1;
+    }
+</style>
